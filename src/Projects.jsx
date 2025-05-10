@@ -2,7 +2,6 @@ import { useFetchProjects } from './FetchProjects';
 
 const Projects = () => {
   const { isLoading, projects } = useFetchProjects();
-  console.log(isLoading, projects);
 
   if (isLoading) {
     return (
